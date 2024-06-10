@@ -6,30 +6,26 @@ import { SearchIcon } from 'lucide-react';
 
 export function Navbar() {
   return (
-    <Nav>
-      <Button>CADASTRAR NOVO PROJETO</Button>
-   
+    <Nav>      
+      <Button>CADASTRAR NOVO PROJETO</Button>   
 
       <InputNameProject>
         <input type="text" placeholder="Nome do projeto" />
       </InputNameProject>
 
-      <RightContainer>
+        <RightContainer>
          <InputNameCompany className="search-company">
             <input type="text" placeholder="Nome da Instituição/empresa" />
          </InputNameCompany>
 
-         <InputSpace>
-            
+         <InputSpace>            
           <i>
             <SearchIcon/>  
           </i>  
-          <input type="text" placeholder="BUSCAR" />          
-                        
-         </InputSpace>  
-            
+          <input type="text" placeholder="BUSCAR" /> 
+                       
+         </InputSpace>        
       </RightContainer>
-      
     </Nav>
   );
 }

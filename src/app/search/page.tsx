@@ -1,7 +1,7 @@
 "use client"
 
+import { Card } from "@/components/cards/Card";
 import { Navbar } from "@/components/navbar/Navbar";
-
 
 
 export default function SearchService() {
@@ -9,7 +9,8 @@ export default function SearchService() {
 
    return (      
       <>
-         <Navbar/>           
+         <Navbar/>   
+         <Card/>        
       </>
    )
 };

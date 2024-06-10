@@ -8,6 +8,12 @@ export const Nav = styled.nav`
   width: 100%;
   padding: 20px 15px;  
   background-color: #000000CC;
+
+  @media (max-width: 768px) {  
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 `;
 
 export const Button = styled.button`  
@@ -21,31 +27,37 @@ export const Button = styled.button`
   font-size: 15px;
   line-height: 26px;
   letter-spacing: 0.46px;
-  border: none; 
-  cursor: pointer; 
-  transition: 0.5s;  
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
 
   :hover {
     background-color: #0a86af;
     color: #ffffff;
   }
+
+  @media (max-width: 768px) {
+    width: 100%; 
+    margin-bottom: 10px;
+  }
 `;
 
 export const InputSpace = styled.div`
-  position: relative;
-  width: 230px;
   display: flex;
+  position: relative;
+  align-items: center;
   height: 42px;
-  align-items: center;  
+  width: 230px;  
+  background-color: #000000CC;
+  color:#ffffff;   
 
   i {
     width: 38px;
     height: 42px; 
     background-color: #000000CC;
-    color:#ffffff;
-    border-radius: 0.3rem;
-    padding: 0.5rem;
+    color:#ffffff;      
     display: flex;
+    padding: 0.5rem;
     align-items: center;
     justify-content: center;
   }
@@ -55,7 +67,7 @@ export const InputSpace = styled.div`
     font-size: 1rem;
     padding: 0.6rem;
     background-color: #000000CC;
-    color: #ffffff;
+    color: #fafafa;
     border: none;
     width: 100%;
     border-radius: 0.3rem;
@@ -65,19 +77,24 @@ export const InputSpace = styled.div`
     font-size: 15px;
     line-height: 26px;
     letter-spacing: 0.46;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-left: 0;
+    }
   }
 `
 
 export const InputNameProject = styled.div`  
   display: flex;  
   flex-direction: column;
-  align-items: center;  
-  margin: 0 10px;
- 
-  input {
+  align-items: center;
+  margin: 0 10px;    
+  
+  input { 
     top: 21px;
     left: 931px;
-    width: 232px;
+    width: 252px;
     height: 38px;
     border-radius: 8px;
     border: 1.5px solid #ffffff;
@@ -94,6 +111,11 @@ export const InputNameProject = styled.div`
     :focus {
       border: 1px solid #F2CDA1;
     }
+
+    @media (max-width: 768px) {
+      width: 100%; 
+      margin-bottom: 10px;
+    }
   }
 `;
 
@@ -101,12 +123,12 @@ export const InputNameCompany = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-right: 10px;
-
-  input {
+  margin-right: 10px;   
+  
+  input {  
     top: 21px;
     left: 1179px;
-    width: 232px;
+    width: 252px;
     height: 38px;
     border-radius: 8px;
     border: 1.5px solid #ffffff;
@@ -124,6 +146,11 @@ export const InputNameCompany = styled.div`
     :focus {
       border: 1px solid #F2CDA1;
     }
+
+    @media (max-width: 768px) {
+      width: 100%; 
+      margin-bottom: 10px;     
+    }
   }
 `;
 
@@ -132,4 +159,3 @@ export const RightContainer = styled.div`
   flex-direction: column;
   align-items: flex-end;
 `;
-
