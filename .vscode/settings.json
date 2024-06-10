@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": [
+    "Biodiversidade",
+    "Buscar",
+    "CADASTRAR",
+    "cadastro",
+    "lucide",
+    "nextjs",
+    "Página",
+    "pesquisa",
+    "Thomé"
+  ]
+}
