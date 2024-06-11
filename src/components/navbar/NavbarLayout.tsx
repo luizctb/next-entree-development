@@ -4,10 +4,10 @@ export const Nav = styled.nav`
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding: 20px 15px;  
-  background-color: #000000CC;
+  /* background-color: #000000CC; */
 
   @media (max-width: 768px) {  
     flex-direction: column;
@@ -47,14 +47,12 @@ export const InputSpace = styled.div`
   position: relative;
   align-items: center;
   height: 42px;
-  width: 230px;  
-  background-color: #000000CC;
+  width: 230px;    
   color:#ffffff;   
 
   i {
     width: 38px;
-    height: 42px; 
-    background-color: #000000CC;
+    height: 42px;     
     color:#ffffff;      
     display: flex;
     padding: 0.5rem;
@@ -98,7 +96,7 @@ export const InputNameProject = styled.div`
     height: 38px;
     border-radius: 8px;
     border: 1.5px solid #ffffff;
-    background-color: #000000;
+    background-color: #000000CC;   
     color: #ffffff;
     padding: 0 16px;
     gap: 10px;
@@ -132,7 +130,7 @@ export const InputNameCompany = styled.div`
     height: 38px;
     border-radius: 8px;
     border: 1.5px solid #ffffff;
-    background-color: #000000;
+    background-color: #000000CC;
     color: #ffffff;
     padding: 0 16px;
     gap: 10px;

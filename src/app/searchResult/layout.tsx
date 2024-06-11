@@ -8,10 +8,9 @@ export const PageContainer = styled.section`
 `;
 
 export const HomeBody = styled.section`
-   display: flex;
-   flex-direction: column;   
-   align-items: center;
-   gap: 0;
+   display: grid;
+   grid-template-columns: repeat(2, 1rf);   
+   grid-gap: 10px;
    margin: 0 auto;
-   
+   width: 80%;   
 `;
